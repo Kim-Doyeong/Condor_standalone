@@ -19,7 +19,7 @@ Here are the instructions for my skimmer, but it is fairly general.
 
    ```ls -lrt /tmp```
 
->>Find your proxy  (you are owner and it  is most likely the bottom-most file in the list, i.e., most recently created).
+   Find your proxy  (you are owner and it  is most likely the bottom-most file in the list, i.e., most recently created).
 modify the ```submitProduction.sh``` with your own proxy file name
 
 3. How to run the code, say you want to process TT files:
