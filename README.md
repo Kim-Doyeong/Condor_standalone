@@ -15,24 +15,24 @@ Here are the instructions for my skimmer, but it is fairly general.
      
 2. How to get your grid proxy file on wisconsin machine:
 
->>```voms-proxy-init --voms=cms --valid=48:00```
+   ```voms-proxy-init --voms=cms --valid=48:00```
 
->>```ls -lrt /tmp```
+   ```ls -lrt /tmp```
 
 >>Find your proxy  (you are owner and it  is most likely the bottom-most file in the list, i.e., most recently created).
 modify the ```submitProduction.sh``` with your own proxy file name
 
 3. How to run the code, say you want to process TT files:
 
->>```python prepareScripts.py TT /hdfs/store/user/ndev/LFV_feb18_mc/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1 /hdfs/store/user/ymaravin/test```
+   ```python prepareScripts.py TT /hdfs/store/user/ndev/LFV_feb18_mc/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1 /hdfs/store/user/ymaravin/test```
 
 
->>I run prepareScripts.py with the name "TT" (call  it anyway you want),
+   I run prepareScripts.py with the name "TT" (call  it anyway you want),
 input directory with TT_Tune etc. then output area (must be in hdfs)
 
->>This would create a lot of files in Scripts/  area, all named TT_*.sh (986 total).
+   This would create a lot of files in Scripts/  area, all named TT_*.sh (986 total).
 
->>Each file is dedicated to process only  one file (takes  about 10  sec each).
+   Each file is dedicated to process only  one file (takes  about 10  sec each).
 
 
 
