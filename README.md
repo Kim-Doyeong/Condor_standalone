@@ -5,7 +5,9 @@ Yurii prepared all code and instructions for me. It was all thanks to Yurii.
 
 Here are the instructions for my skimmer, but it is fairly general.
 ## Preparation:
-1. important files: prepareScripts.py (check for doyeong - replace with your user name)
+1. ```git clone https://github.com/dykim1/Condor_standalone.git```
+
+2. important files: prepareScripts.py (check for doyeong - replace with your user name)
 
      directory Scripts <- the script above will put stuff in it
      
@@ -13,7 +15,7 @@ Here are the instructions for my skimmer, but it is fairly general.
      
      submitProduction.sh <- submission script, needs to be modified in line 14 with  your own grid proxy file  (see below)
      
-2. How to get your grid proxy file on wisconsin machine:
+3. How to get your grid proxy file on wisconsin machine:
 
    ```voms-proxy-init --voms=cms --valid=48:00```
 
@@ -22,7 +24,7 @@ Here are the instructions for my skimmer, but it is fairly general.
    Find your proxy  (you are owner and it  is most likely the bottom-most file in the list, i.e., most recently created).
 modify the ```submitProduction.sh``` with your own proxy file name
 
-3. How to run the code, say you want to process TT files:
+4. How to run the code, say you want to process TT files:
 
    ```python prepareScripts.py TT /hdfs/store/user/ndev/LFV_feb18_mc/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1 /hdfs/store/user/ymaravin/test```
 
